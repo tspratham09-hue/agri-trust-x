@@ -27,10 +27,8 @@ def get_base64_of_bin_file(bin_file):
 def apply_glassmorphism_ui():
     """Injects custom CSS to create a futuristic Glassmorphism UI using a local image."""
     
-    # Reads the local background image from your folder
     img_base64 = get_base64_of_bin_file("background.png")
     
-    # Fallback to a dark color if the image is not found
     if img_base64:
         bg_css = f'background-image: url("data:image/png;base64,{img_base64}");'
     else:
@@ -48,20 +46,33 @@ def apply_glassmorphism_ui():
     
     /* Frosted Glass effect for the main container */
     .block-container {{
-        background: rgba(15, 25, 35, 0.55) !important;
+        background: rgba(15, 25, 35, 0.75) !important;
         backdrop-filter: blur(16px) !important;
         -webkit-backdrop-filter: blur(16px) !important;
         border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        padding: 3rem !important;
-        margin-top: 3rem !important;
-        margin-bottom: 3rem !important;
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 2rem !important;
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+    }}
+
+    /* FORCE HIGH CONTRAST TEXT FOR MOBILE & DESKTOP */
+    .block-container h1, .block-container h2, .block-container h3, 
+    .block-container p, .block-container span, .block-container label, 
+    [data-baseweb="radio"] label span {{
+        color: #FFFFFF !important;
+    }}
+    
+    /* Input field label text styling */
+    .stTextInput label p {{
+        color: #FFFFFF !important;
+        font-weight: 600 !important;
     }}
 
     /* Transparent Sidebar with Blur */
     [data-testid="stSidebar"] {{
-        background-color: rgba(10, 15, 20, 0.6) !important;
+        background-color: rgba(10, 15, 20, 0.8) !important;
         backdrop-filter: blur(12px) !important;
         -webkit-backdrop-filter: blur(12px) !important;
         border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -86,7 +97,7 @@ def apply_glassmorphism_ui():
     }}
     div[data-baseweb="tab"]:focus, div[data-baseweb="tab"]:hover, div[aria-selected="true"] {{
         outline: none;
-        background-color: rgba(76, 175, 80, 0.3);
+        background-color: rgba(76, 175, 80, 0.4);
         border-bottom: 2px solid #4CAF50 !important;
     }}
     </style>
