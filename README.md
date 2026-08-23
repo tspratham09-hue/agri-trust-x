@@ -42,7 +42,7 @@ To run AgriTrustX on your local machine:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/tspratham09-hue/agri-trust-x.git]
+   git clone https://github.com/tspratham09-hue/agri-trust-x.git
    cd agri-trust-x
 
    
