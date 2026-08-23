@@ -5,6 +5,12 @@
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg)
 
+<p align="center">
+  <a href="https://agri-trust-x-eayw7idqunqtcmrkw6ooc7.streamlit.app">
+    <img src="https://img.shields.io/badge/🔴_Live_Demo-Launch_AgriTrustX-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Demo">
+  </a>
+</p>
+
 **AgriTrustX** is a resilient, AI-powered agricultural Super App designed to bring enterprise-grade technology to grassroots farmers. Built to solve the critical breakpoints of rural connectivity and language barriers, this platform operates with a zero-downtime architecture to ensure continuous access to essential farming data.
 
 <p align="center">
